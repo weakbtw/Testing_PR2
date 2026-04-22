@@ -72,18 +72,8 @@
     function deleteTask(btnElement) {
         const ul = document.getElementById('taskList');
 
-        // ==========================================
-        // ФУНКЦІОНАЛЬНА ПОМИЛКА 2: Неправильне видалення
-        // ==========================================
-    
         const liToRemove = btnElement.parentElement;
         liToRemove.remove();
-        
-        /*
-        if(ul.lastElementChild) {
-            ul.removeChild(ul.lastElementChild);
-        }
-        */
 
         // ==========================================
         // ФУНКЦІОНАЛЬНА ПОМИЛКА 3: Зламаний лічильник
