@@ -18,6 +18,13 @@ class TodoList {
         }
         return false;
     }
+    
+    getTask(index) {
+        if (index < 0 || index >= this.tasks.length) {
+            throw new Error("Завдання не знайдено");
+        }
+        return this.tasks[index];
+    }
 
     getTaskCount() {
         return this.tasks.length;
